@@ -502,7 +502,7 @@ class Sample:
             self.last_volt = self.voltage_handler.voltage_average_n()
 
         elif float(self.curr_volt) < float(self.volt_on) and not (
-                self.NEW_LOAD == 1 and self.experiment.autovolt == "TRUE"):
+                        self.NEW_LOAD == 1 and self.experiment.autovolt == "TRUE"):
             if self.load_flag == 1:
                 self.load_flag = 0
                 if self.error_flag == 1:
@@ -567,7 +567,7 @@ class Sample:
                 if self.experiment.verbose == "TRUE":
                     print("current delta is %f " % differences)
                 if self.curr_volt < (self.volt_hist[0] - .5) and differences < .075 and (
-                    time.time() - self.time_init) > 86400:
+                            time.time() - self.time_init) > 86400:
                     if self.experiment.verbose == "TRUE":
                         print("turning off new_load flag in autovolter")
                     self.NEW_LOAD = 0
