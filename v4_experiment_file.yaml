@@ -1,0 +1,105 @@
+---
+Experiment_1:
+    experiment_values:
+        type: 'experiment_values'
+        # main board variables
+        name: "Experiment 1"
+        exptype: "Morbidostat"
+        boards:
+            - 
+                    
+        # testing variables
+        interactive_mode: False
+        verbose: True
+        override_mix: True
+        new_experiment: True
+        
+        # Saving
+        save_experiment: True
+        save_every: 12
+        sample_save: '/Users/mnapolitano/Dropbox/Morbidostat/v3_test/sample_save_v4'
+        save_file: '/Users/mnapolitano/Dropbox/morbidostat/v3_test/save_v4.csv'
+        
+        # i2c variables     
+        analog: True
+        i2c_addresses:  
+            - 0x20
+            - 0x21
+            - 0x22
+        
+        # plotly
+        plotly: True
+        maxpoints: 36000
+        plotly_api_key: 08txz0q8lf
+        plotly_username: mnapolitano
+        
+        # voltage variables
+        reads_normal: 60
+        sleeptime_normal: 1
+        reads_diluting: 10
+        sleeptime_diluting: .1
+        autovolt: False
+        tolerance: .5
+        voltage_type: 'old'
+        sampling_interval : 300
+        
+        # Morbidostat settings
+        resolution: 60
+        wiggle: 600
+        step_size: .05
+        initial_adaptation_cycles: 3
+        adaptation_cycles_to_step: 3
+        growth_rate_type: 'old'
+             
+    Sample_1: 
+        type: 'sample'
+        name: "YAML Test_1"
+        channel: 3
+        analog_pin: 0
+        pump_restrictive_pin: 3
+        pump_waste_pin: 4
+        pump_permissive_pin: 5
+        v_adj: 0 
+        growth_rate: 999999
+        volt_on: 1.25
+        volt_off: 1.45
+        stream_id: kcjyx6wlkd
+        experiment_number: 1
+        experiment: Experiment_1
+        board_assignment: 0
+    Sample_2: 
+        type: 'sample'
+        name: "YAML Test_2"
+        channel: 4
+        analog_pin: 1
+        pump_restrictive_pin: 8
+        pump_waste_pin: 9
+        pump_permissive_pin: 10
+        v_adj: 0 
+        growth_rate: 999999
+        volt_on: 1.0
+        volt_off: 1.2
+        stream_id: 89shvcja3r
+        experiment_number: 1
+        experiment: Experiment_1
+        board_assignment: 0
+    
+    Sample_3: 
+        type: 'sample'
+        name: "YAML Test_3"
+        channel: 5
+        analog_pin: 2
+        pump_restrictive_pin: 11
+        pump_waste_pin: 12
+        pump_permissive_pin: 13
+        v_adj: 0 
+        growth_rate: 999999
+        volt_on: 1.25
+        volt_off: 1.45
+        stream_id: hxktrddf22
+        experiment_number: 1
+        experiment: Experiment_1
+        board_assignment: 0
+
+        
+...

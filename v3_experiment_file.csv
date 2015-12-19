@@ -1,0 +1,31 @@
+name,value
+board port,/dev/cu.usbserial-00002414
+save_file,/Users/mnapolitano/Dropbox/morbidostat/v3_test/save.csv
+new experiment,TRUE
+sample file,/Users/mnapolitano/Dropbox/Morbidostat/v3_test/sample.csv
+maxpoints,36000
+api key,08txz0q8lf
+plotly username,mnapolitano
+sample save file,/Users/mnapolitano/Dropbox/Morbidostat/v3_test/sample_save
+tolerance,10
+experiment type,Morbidostat
+resolution,30
+initial cycles,3
+adaptation cycles,3
+analog,TRUE
+step size,0.05
+reads normal,60
+sleeptime normal,1
+reads diluting,10
+sleeptime diluting,1
+i2c board 1,32
+save every,90
+plotly,TRUE
+growth rate type,old
+voltage type,old
+interactive mode,FALSE
+name,testname
+wiggle,1000
+auto volt,FALSE
+verbose,TRUE
+mix,TRUE
