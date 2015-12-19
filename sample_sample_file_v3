@@ -1,0 +1,4 @@
+name,channel,analog_pin,pump_rest_pin,pump_perm_pin,pump_waste_pin,v_adj,growth_rate,volt_on,volt_off,stream_id,experiment_number,experiment,mix
+dep 1mM,3,0,3,5,4,0,99999,1.25,1.45,8e8w3jy1xb,1,test,TRUE
+dep 1mM,4,1,8,10,9,0,99999,0.8,1,5xryzi5v9o,1,test,TRUE
+dep 1mM,5,2,11,13,12,0,99999,1.7,1.9,idstja8mfq,1,test,TRUE
