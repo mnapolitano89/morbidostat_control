@@ -8,6 +8,7 @@ import time
 import plotly.plotly as py
 import plotly.tools as tls
 from PyMata.pymata import PyMata
+
 # import pandas as pd
 import os
 import sys
@@ -428,6 +429,7 @@ class Sample:
         self.growth_rate_history = []
         self.wt_growth_rate = 40000
         self.NEW_LOAD = 1
+        self.error_flag = 0
         try:
             y = float(input('New permissive fraction? (e.g. .80 for 80% permissive), -1 to use current'))
             if y == -1:
